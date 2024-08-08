@@ -35,6 +35,10 @@
             .cand-collapsible {
                 display:none;
             }
+            
+            .state-collapsible {
+                display:none;
+            }
 
             .show-all {
                 background-color:#fff;
@@ -73,6 +77,10 @@
                 font-size: 95%;
             }
 
+            .results-states td {
+                height: 2.5em;
+            }
+
         </style>
         <script type="text/javascript" src="https://uselectionatlas.org/JS/jquery-1.11.2.min.js"></script>
 		<script type="text/javascript" src="https://uselectionatlas.org/jquery.imagemapster.min.js"></script>
@@ -82,9 +90,9 @@
     </head>
     <body>
         <div id="title_info"></div>
-        <h1 class="mt-5 mb-5 text-center display-1"><strong>GANO VENEZUELA</strong></h1>
-        <div class="container d-flex flex-wrap-reverse">
-            <div class="col"><div class="card" style="width:fit-content;">
+        <h1 class="mt-5 mb-5 text-center display-1" style="font-weight:bold;">GANO VENEZUELA</h1>
+        <div class="container-xxl d-flex flex-wrap-reverse justify-content-around">
+            <div class="col-auto mb-5"><div class="card" style="width:fit-content;">
                 <div class="card-header" style="padding:5px 20px;display:flex;align-items:center;font-size:85%;justify-content: space-between;"><span style="color:#6f6f6f;">Latest results from Aug. 5</span>
                     <div style="display:flex;align-items: center;">
                         <span><b>84% OF VOTES IN</b></span>
@@ -221,7 +229,217 @@
                     <p style="padding-left:20px;margin:0;color:#808080;"><small>*Incumbent</small></p>
                 </div>
             </div>
-            <h5 class="mt-3 mb-3"><b>Results by state</b></h5></div>
+            <h5 class="mt-4 mb-3"><b>Results by state</b></h5>
+            <div class="card" style="width:100%;">
+                <div class="card-body" style="padding-left:0;padding-right:0;padding-bottom:3px;">
+                    <table class="results-states">
+                        <thead>
+                            <th style="width:auto;padding-right:11em;">State</th>
+                            <th style="width:80px;padding-left:15px;">González</th>
+                            <th style="width:80px;padding-left:22px;">Maduro</th>
+                            <th style="width:80px;padding-left:15px;">Martínez</th>
+                            <th style="width:145px;text-align:right">Total votes</th>
+                            <th style="width:80px;text-align:right;padding-right:15px;">% in</th>
+                        </thead>
+                        <tr>
+                            <td>Zulia</td>
+                            <td style="text-align:right;padding:0 10px;background-color: #c9e5f7;">69%</td>
+                            <td style="text-align:right;padding:0 10px;">29%</td>
+                            <td style="text-align:right;padding:0 10px;">1%</td>
+                            <td style="text-align:right;">1,105,158</td>
+                            <td style="text-align:right;padding-right:15px;color:#808080;">82%</td>
+                        </tr>
+                        <tr>
+                            <td>Miranda</td>
+                            <td style="text-align:right;padding:0 10px;background-color: #c9e5f7;">66<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">31<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">1<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;">991,534</td>
+                            <td style="text-align:right;padding-right:15px;color:#808080;">75%</td>
+                        </tr>
+                        <tr>
+                            <td>Distrito Capital</td>
+                            <td style="text-align:right;padding:0 10px;background-color: #c9e5f7;">64<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">32<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">1<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;">789,877</td>
+                            <td style="text-align:right;padding-right:15px;color:#808080;">75%</td>
+                        </tr>
+                        <tr>
+                            <td>Lara</td>
+                            <td style="text-align:right;padding:0 10px;background-color: #c9e5f7;">68<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">29<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">1<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;">729,651</td>
+                            <td style="text-align:right;padding-right:15px;color:#808080;">80%</td>
+                        </tr>
+                        <tr>
+                            <td>Aragua</td>
+                            <td style="text-align:right;padding:0 10px;background-color: #c9e5f7;">67<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">29<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">1<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;">723,599</td>
+                            <td style="text-align:right;padding-right:15px;color:#808080;">93%</td>
+                        </tr>
+                        <tr>
+                            <td>Carabobo</td>
+                            <td style="text-align:right;padding:0 10px;background-color: #c9e5f7;">71<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">26<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">1<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;">661,107</td>
+                            <td style="text-align:right;padding-right:15px;color:#808080;">67%</td>
+                        </tr>
+                        <tr class="state-collapsible">
+                            <td>Anzoátegui</td>
+                            <td style="text-align:right;padding:0 10px;background-color: #c9e5f7;">67<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">31<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">1<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;">632,190</td>
+                            <td style="text-align:right;padding-right:15px;color:#808080;">86%</td>
+                        </tr>
+                        <tr class="state-collapsible">
+                            <td>Táchira</td>
+                            <td style="text-align:right;padding:0 10px;background-color: #c9e5f7;">82<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">16<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">1<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;">486,851</td>
+                            <td style="text-align:right;padding-right:15px;color:#808080;">>95%</td>
+                        </tr>
+                        <tr class="state-collapsible">
+                            <td>Bolívar</td>
+                            <td style="text-align:right;padding:0 10px;background-color: #c9e5f7;">71<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">26<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">1<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;">482,762</td>
+                            <td style="text-align:right;padding-right:15px;color:#808080;">74%</td>
+                        </tr>
+                        <tr class="state-collapsible">
+                            <td>Sucre</td>
+                            <td style="text-align:right;padding:0 10px;background-color: #c9e5f7;">50<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">48<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">1<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;">440,204</td>
+                            <td style="text-align:right;padding-right:15px;color:#808080;">94%</td>
+                        </tr>
+                        <tr class="state-collapsible">
+                            <td>Portuguesa</td>
+                            <td style="text-align:right;padding:0 10px;background-color: #c9e5f7;">64<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">34<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">1<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;">439,448</td>
+                            <td style="text-align:right;padding-right:15px;color:#808080;">91%</td>
+                        </tr>
+                        <tr class="state-collapsible">
+                            <td>Falcón</td>
+                            <td style="text-align:right;padding:0 10px;background-color: #c9e5f7;">71<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">27<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">1<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;">425,682</td>
+                            <td style="text-align:right;padding-right:15px;color:#808080;">93%</td>
+                        </tr>
+                        <tr class="state-collapsible">
+                            <td>Mérida</td>
+                            <td style="text-align:right;padding:0 10px;background-color: #c9e5f7;">77<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">21<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">1<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;">395,027</td>
+                            <td style="text-align:right;padding-right:15px;color:#808080;">95%</td>
+                        </tr>
+                        <tr class="state-collapsible">
+                            <td>Barínas</td>
+                            <td style="text-align:right;padding:0 10px;background-color: #c9e5f7;">74<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">24<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">1<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;">379,383</td>
+                            <td style="text-align:right;padding-right:15px;color:#808080;">94%</td>
+                        </tr>
+                        <tr class="state-collapsible">
+                            <td>Trujillo</td>
+                            <td style="text-align:right;padding:0 10px;background-color: #c9e5f7;">64<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">34<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">1<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;">347,602</td>
+                            <td style="text-align:right;padding-right:15px;color:#808080;">93%</td>
+                        </tr>
+                        <tr class="state-collapsible">
+                            <td>Guarico</td>
+                            <td style="text-align:right;padding:0 10px;background-color: #c9e5f7;">64<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">34<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">1<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;">345,187</td>
+                            <td style="text-align:right;padding-right:15px;color:#808080;">88%</td>
+                        </tr>
+                        <tr class="state-collapsible">
+                            <td>Monagas</td>
+                            <td style="text-align:right;padding:0 10px;background-color: #c9e5f7;">60<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">38<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">1<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;">334,148</td>
+                            <td style="text-align:right;padding-right:15px;color:#808080;">77%</td>
+                        </tr>
+                        <tr class="state-collapsible">
+                            <td>Yaracuy</td>
+                            <td style="text-align:right;padding:0 10px;background-color: #c9e5f7;">61<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">37<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">1<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;">297,973</td>
+                            <td style="text-align:right;padding-right:15px;color:#808080;">91%</td>
+                        </tr>
+                        <tr class="state-collapsible">
+                            <td>Nueva Esparta</td>
+                            <td style="text-align:right;padding:0 10px;background-color: #c9e5f7;">66<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">31<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">1<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;">229,621</td>
+                            <td style="text-align:right;padding-right:15px;color:#808080;">95%</td>
+                        </tr>
+                        <tr class="state-collapsible">
+                            <td>Apure</td>
+                            <td style="text-align:right;padding:0 10px;background-color: #c9e5f7;">63<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">35<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">1<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;">214,315</td>
+                            <td style="text-align:right;padding-right:15px;color:#808080;">89%</td>
+                        </tr>
+                        <tr class="state-collapsible">
+                            <td>Cojedes</td>
+                            <td style="text-align:right;padding:0 10px;background-color: #c9e5f7;">63<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">35<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">1<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;">173,610</td>
+                            <td style="text-align:right;padding-right:15px;color:#808080;">93%</td>
+                        </tr>
+                        <tr class="state-collapsible">
+                            <td>La Guaira</td>
+                            <td style="text-align:right;padding:0 10px;background-color: #c9e5f7;">61<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">36<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">1<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;">160,268</td>
+                            <td style="text-align:right;padding-right:15px;color:#808080;">79%</td>
+                        </tr>
+                        <tr class="state-collapsible">
+                            <td>Delta Amacuru</td>
+                            <td style="text-align:right;padding:0 10px;background-color: #c9e5f7;">53<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">44<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">1<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;">56,273</td>
+                            <td style="text-align:right;padding-right:15px;color:#808080;">71%</td>
+                        </tr>
+                        <tr class="state-collapsible">
+                            <td>Amazonas</td>
+                            <td style="text-align:right;padding:0 10px;background-color: #c9e5f7;">59<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">38<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;padding:0 10px;">1<span style="opacity:0">%</span></td>
+                            <td style="text-align:right;">45,792</td>
+                            <td style="text-align:right;padding-right:15px;color:#808080;">54%</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="padding:0;border-bottom:0;"><button class="show-all" style="background-color:none;" onclick="state_un()">+ Show all</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
             <style>
                 table.hov {
                 background-color:#FFD200;
@@ -239,7 +457,7 @@
                 area {
                 cursor: pointer;}
             </style>
-            <div class="col-auto d-flex" style="flex-direction:column;align-content:center;justify-content:flex-start;">
+            <div class="col-auto d-flex mb-5" style="flex-direction:column;align-content:center;justify-content:flex-start;">
                 <table style="margin: 0 auto; border:none;"><td style="width:500px;border:none;">
                     <div id="mapster_wrap_0" style="display: block; position: relative; padding: 0px; width: 500px; height: 433.267px;"><img class="map" id="nationalmap" usemap="#ve2024.map" alt="2004 National Map of General Election Results for President" style="border: 0px; position: absolute; left: 0px; top: 0px; padding: 0px; opacity: 0;" src="vzla states 2024.svg"></div>
                 </td></table>
@@ -324,6 +542,22 @@
                     <area shape='poly' href="#" coords="65.834, 55.589, 65.843, 55.593, 65.846, 55.593, 65.848, 55.597, 65.850, 55.603, 65.854, 55.612, 65.860, 55.618, 65.865, 55.627, 65.865, 55.634, 65.864, 55.639, 65.861, 55.640, 65.858, 55.646, 65.855, 55.649, 65.855, 55.652, 65.851, 55.660, 65.848, 55.664, 65.848, 55.671, 65.843, 55.681, 65.844, 55.687, 65.844, 55.692, 65.841, 55.692, 65.838, 55.692, 65.835, 55.691, 65.827, 55.690, 65.822, 55.690, 65.819, 55.690, 65.815, 55.688, 65.813, 55.686, 65.810, 55.685, 65.806, 55.682, 65.800, 55.680, 65.795, 55.679, 65.791, 55.675, 65.789, 55.673, 65.785, 55.670, 65.784, 55.666, 65.787, 55.665, 65.789, 55.666, 65.793, 55.664, 65.792, 55.668, 65.791, 55.670, 65.792, 55.670, 65.794, 55.672, 65.798, 55.675, 65.800, 55.675, 65.803, 55.676, 65.806, 55.678, 65.811, 55.682, 65.815, 55.684, 65.819, 55.687, 65.822, 55.686, 65.824, 55.685, 65.826, 55.682, 65.829, 55.681, 65.829, 55.676, 65.828, 55.673, 65.826, 55.670, 65.824, 55.668, 65.820, 55.666, 65.816, 55.665, 65.814, 55.660, 65.811, 55.654, 65.808, 55.651, 65.802, 55.647, 65.799, 55.645, 65.796, 55.642, 65.793, 55.641, 65.790, 55.637, 65.789, 55.633, 65.790, 55.630, 65.794, 55.622, 65.797, 55.620, 65.799, 55.615, 65.803, 55.609, 65.806, 55.606, 65.808, 55.606, 65.816, 55.600, 65.818, 55.598, 65.818, 55.594, 65.819, 55.590, 65.817, 55.589, 65.814, 55.589, 65.806, 55.590, 65.803, 55.590, 65.799, 55.590, 65.796, 55.591, 65.794, 55.593, 65.792, 55.595, 65.791, 55.598, 65.788, 55.599, 65.782, 55.594, 65.783, 55.590, 65.783, 55.589, 65.787, 55.586, 65.792, 55.583, 65.797, 55.580, 65.802, 55.579, 65.808, 55.581, 65.813, 55.581, 65.819, 55.583, 65.828, 55.584, 65.831, 55.586" alt="Zulia" onmouseover="showAltMsg('<b>Zulia</b><table class=\'results-popup\'><thead><tr style=\'color: #767676;border-bottom:1px solid #e2e2e2;text-align:left;\'><th style=\'padding-left:0;\'>Candidate</th><th style=\'padding-left: 35px;\'>Votes</th><th>Pct. <span style=\'opacity: 0;\'>%</span></th></tr></thead><tbody><tr style=\'color: #333;border-bottom:1px solid #e2e2e2;text-align:left;\'><td><div class=\'candidate\' style=\'margin:0;\'><span style=\'border-left:5px solid #0f52ba; padding-right:6px;height:1.75em;\'></span>Edmundo González</div></td><td style=\'text-align:right\'>766,915</td><td style=\'text-align:right\'><b>69%</b></td></tr><tr style=\'color: #333;border-bottom:1px solid #e2e2e2;text-align:left;\'><td><div class=\'candidate\' style=\'margin:0;\'><span style=\'border-left:5px solid #ff0000; padding-right:6px;height:1.75em;\'></span>Nicolas Maduro</div></td><td style=\'text-align:right\'>321,797</td><td style=\'text-align:right\'><b>29<span style=\'opacity: 0;\'>%</span></b></td></tr><tr style=\'color: #333;border-bottom:1px solid #e2e2e2;text-align:left;\'><td><div class=\'candidate\' style=\'margin:0;\'><span style=\'border-left:5px solid #808080; padding-right:6px;height:1.75em;\'></span>Luis Martinez</div></td><td style=\'text-align:right\'>5,924</td><td style=\'text-align:right\'><b>1<span style=\'opacity: 0;\'>%</span></b></td></tr></tbody><tfoot><tr><td colspan=\'3\' style=\'border:none;color:#767676;\'>82% of votes in</td></tr></tfoot></table>')"; onmouseout="hideAltMsg()" />
                     <area shape='poly' href="#" coords="85.179, 105.705, 85.193, 105.733, 85.204, 105.772, 85.221, 105.786, 85.232, 105.790, 85.249, 105.821, 85.261, 105.864, 85.277, 105.913, 85.314, 105.941, 85.346, 105.942, 85.394, 105.938, 85.448, 105.997, 85.473, 106.012, 85.504, 106.043, 85.536, 106.068, 85.565, 106.063, 85.586, 106.058, 85.612, 106.053, 85.663, 106.059, 85.705, 106.085, 85.754, 106.095, 85.795, 106.096, 85.839, 106.080, 85.912, 106.105, 85.957, 106.149, 85.960, 106.189, 85.990, 106.224, 86.012, 106.226, 86.034, 106.217, 86.038, 106.213, 86.060, 106.230, 86.074, 106.231, 86.092, 106.238, 86.104, 106.240, 86.118, 106.255, 86.100, 106.262, 86.114, 106.284, 86.135, 106.314, 86.163, 106.346, 86.191, 106.353, 86.207, 106.362, 86.227, 106.362, 86.247, 106.386, 86.274, 106.412, 86.289, 106.435, 86.304, 106.454, 86.318, 106.502, 86.345, 106.502, 86.375, 106.488, 86.390, 106.472, 86.402, 106.467, 86.437, 106.486, 86.459, 106.516, 86.486, 106.533, 86.515, 106.538, 86.528, 106.547, 86.549, 106.552, 86.559, 106.589, 86.573, 106.568, 86.604, 106.593, 86.624, 106.582, 86.641, 106.577, 86.666, 106.578, 86.687, 106.582, 86.701, 106.600, 86.703, 106.626, 86.710, 106.630, 86.729, 106.635, 86.742, 106.641, 86.759, 106.642, 86.774, 106.643, 86.791, 106.632, 86.857, 106.640, 86.907, 106.629, 86.995, 106.607, 87.066, 106.608, 87.089, 106.586, 87.149, 106.569, 87.221, 106.553, 87.259, 106.581, 87.292, 106.620, 87.358, 106.637, 87.435, 106.665, 87.479, 106.716, 87.506, 106.755, 87.528, 106.811, 87.517, 106.867, 87.550, 106.928, 87.587, 106.969, 87.632, 107.018, 87.698, 107.063, 87.797, 107.097, 87.895, 107.164, 87.945, 107.231, 88.038, 107.355, 88.142, 107.428, 88.173, 107.439, 88.290, 107.479, 88.383, 107.585, 88.438, 107.653, 88.509, 107.725, 88.528, 107.734, 88.558, 107.750, 88.559, 107.751, 88.575, 107.759, 88.619, 107.871, 88.618, 107.943, 88.657, 107.971, 88.701, 108.044, 88.739, 108.128, 88.749, 108.190, 88.782, 108.329, 88.881, 108.386, 88.884, 108.386, 89.002, 108.419, 89.007, 108.464, 89.057, 108.548, 89.128, 108.593, 89.265, 108.650, 89.359, 108.656, 89.447, 108.656, 89.546, 108.656, 89.606, 108.690, 89.661, 108.724, 89.700, 108.780, 89.793, 108.792, 89.875, 108.814, 89.974, 108.837, 90.095, 108.944, 90.139, 109.033, 90.143, 109.038, 90.171, 109.077, 90.281, 109.173, 90.297, 109.223, 90.350, 109.257, 90.385, 109.279, 90.473, 109.308, 90.495, 109.364, 90.495, 109.364, 90.489, 109.414, 90.488, 109.542, 90.515, 109.660, 90.548, 109.828, 90.563, 109.967, 90.563, 110.051, 90.650, 110.242, 90.688, 110.348, 90.716, 110.443, 90.759, 110.594, 90.797, 110.667, 90.725, 110.700, 90.598, 110.811, 90.543, 110.845, 90.492, 110.886, 90.482, 110.894, 90.422, 110.939, 90.350, 110.972, 90.262, 111.005, 90.228, 111.111, 90.267, 111.190, 90.321, 111.279, 90.360, 111.352, 90.425, 111.447, 90.540, 111.521, 90.562, 111.576, 90.562, 111.677, 90.523, 111.738, 90.561, 111.828, 90.561, 111.850, 90.561, 111.873, 90.561, 111.929, 90.569, 111.953, 90.557, 111.983, 90.399, 112.111, 89.135, 113.142, 88.665, 113.525, 88.291, 113.829, 87.243, 114.683, 86.812, 115.035, 86.802, 115.043, 85.715, 115.928, 85.707, 115.919, 85.649, 115.890, 85.619, 115.822, 85.604, 115.766, 85.596, 115.705, 85.583, 115.674, 85.565, 115.622, 85.548, 115.582, 85.518, 115.542, 85.483, 115.492, 85.434, 115.454, 85.425, 115.455, 85.374, 115.465, 85.362, 115.451, 85.341, 115.441, 85.325, 115.434, 85.284, 115.380, 85.255, 115.342, 85.190, 115.312, 85.140, 115.292, 85.091, 115.278, 85.086, 115.274, 85.084, 115.272, 85.035, 115.234, 84.954, 115.205, 84.893, 115.207, 84.834, 115.197, 84.754, 115.172, 84.720, 115.163, 84.689, 115.144, 84.655, 115.105, 84.577, 115.063, 84.541, 115.047, 84.478, 115.037, 84.421, 115.026, 84.349, 114.996, 84.306, 114.964, 84.253, 114.912, 84.184, 114.858, 84.148, 114.820, 84.108, 114.780, 84.082, 114.748, 84.037, 114.717, 84.011, 114.664, 84.010, 114.633, 83.996, 114.585, 83.973, 114.544, 83.951, 114.517, 83.928, 114.506, 83.913, 114.497, 83.904, 114.464, 83.902, 114.421, 83.899, 114.358, 83.898, 114.272, 83.910, 114.213, 83.911, 114.163, 83.907, 114.113, 83.883, 114.091, 83.866, 114.053, 83.847, 114.013, 83.844, 113.974, 83.827, 113.949, 83.806, 113.901, 83.778, 113.855, 83.766, 113.821, 83.742, 113.806, 83.709, 113.770, 83.666, 113.720, 83.616, 113.692, 83.582, 113.655, 83.578, 113.629, 83.572, 113.580, 83.546, 113.548, 83.505, 113.550, 83.461, 113.560, 83.412, 113.536, 83.375, 113.508, 83.357, 113.473, 83.346, 113.451, 83.304, 113.447, 83.272, 113.455, 83.220, 113.469, 83.156, 113.464, 83.108, 113.455, 83.092, 113.450, 83.076, 113.445, 83.076, 113.445, 82.987, 113.421, 82.886, 113.414, 82.850, 113.416, 82.817, 113.444, 82.769, 113.451, 82.745, 113.423, 82.715, 113.394, 82.703, 113.395, 82.657, 113.415, 82.626, 113.401, 82.591, 113.389, 82.540, 113.389, 82.489, 113.384, 82.435, 113.398, 82.378, 113.426, 82.345, 113.412, 82.324, 113.385, 82.297, 113.368, 82.266, 113.345, 82.235, 113.340, 82.182, 113.316, 82.169, 113.336, 82.152, 113.374, 82.116, 113.359, 82.086, 113.362, 82.059, 113.370, 82.037, 113.383, 82.002, 113.393, 81.988, 113.420, 81.995, 113.444, 81.977, 113.452, 81.960, 113.459, 81.958, 113.460, 81.923, 113.434, 81.899, 113.390, 81.875, 113.373, 81.858, 113.381, 81.856, 113.397, 81.848, 113.429, 81.840, 113.444, 81.815, 113.455, 81.798, 113.437, 81.780, 113.404, 81.760, 113.367, 81.747, 113.367, 81.738, 113.377, 81.742, 113.409, 81.744, 113.430, 81.719, 113.443, 81.701, 113.448, 81.674, 113.455, 81.634, 113.460, 81.614, 113.462, 81.585, 113.491, 81.555, 113.513, 81.537, 113.510, 81.520, 113.482, 81.499, 113.446, 81.471, 113.436, 81.445, 113.459, 81.410, 113.496, 81.404, 113.494, 81.388, 113.465, 81.369, 113.436, 81.338, 113.410, 81.295, 113.350, 81.241, 113.307, 81.198, 113.279, 81.196, 113.299, 81.197, 113.334, 81.181, 113.352, 81.157, 113.364, 81.128, 113.375, 81.118, 113.340, 81.079, 113.304, 81.060, 113.302, 81.034, 113.278, 81.025, 113.236, 81.015, 113.214, 81.014, 113.167, 80.990, 113.123, 80.953, 113.142, 80.933, 113.175, 80.929, 113.206, 80.920, 113.222, 80.896, 113.230, 80.882, 113.180, 80.900, 113.150, 80.915, 113.125, 80.923, 113.108, 80.946, 113.078, 80.908, 113.060, 80.858, 113.061, 80.829, 113.039, 80.786, 113.001, 80.769, 113.003, 80.740, 113.039, 80.707, 113.063, 80.653, 113.049, 80.634, 113.017, 80.646, 112.996, 80.663, 112.970, 80.648, 112.953, 80.640, 112.956, 80.613, 112.965, 80.590, 112.998, 80.566, 112.990, 80.565, 112.984, 80.559, 112.950, 80.559, 112.931, 80.560, 112.912, 80.565, 112.864, 80.576, 112.841, 80.587, 112.818, 80.579, 112.796, 80.568, 112.771, 80.551, 112.739, 80.551, 112.710, 80.557, 112.685, 80.553, 112.680, 80.531, 112.673, 80.526, 112.644, 80.523, 112.623, 80.510, 112.603, 80.491, 112.607, 80.452, 112.622, 80.427, 112.607, 80.419, 112.568, 80.370, 112.570, 80.341, 112.570, 80.332, 112.528, 80.330, 112.503, 80.334, 112.477, 80.327, 112.453, 80.298, 112.425, 80.289, 112.407, 80.271, 112.393, 80.251, 112.386, 80.214, 112.380, 80.191, 112.378, 80.167, 112.396, 80.142, 112.417, 80.136, 112.389, 80.143, 112.379, 80.156, 112.342, 80.163, 112.322, 80.150, 112.316, 80.123, 112.324, 80.082, 112.356, 80.049, 112.364, 80.030, 112.364, 80.019, 112.335, 80.015, 112.316, 79.995, 112.303, 79.976, 112.279, 79.986, 112.257, 80.000, 112.246, 80.020, 112.227, 80.015, 112.211, 79.990, 112.203, 79.954, 112.194, 79.931, 112.196, 79.902, 112.231, 79.888, 112.240, 79.871, 112.244, 79.863, 112.223, 79.870, 112.204, 79.879, 112.181, 79.854, 112.164, 79.824, 112.175, 79.800, 112.189, 79.784, 112.174, 79.763, 112.154, 79.747, 112.135, 79.724, 112.120, 79.704, 112.122, 79.683, 112.134, 79.674, 112.154, 79.651, 112.179, 79.632, 112.171, 79.631, 112.143, 79.639, 112.127, 79.624, 112.097, 79.608, 112.092, 79.589, 112.082, 79.562, 112.066, 79.551, 112.059, 79.518, 112.032, 79.499, 112.007, 79.476, 111.998, 79.447, 112.007, 79.436, 111.988, 79.424, 111.960, 79.402, 111.930, 79.386, 111.940, 79.364, 111.951, 79.349, 111.949, 79.335, 111.923, 79.320, 111.920, 79.309, 111.968, 79.282, 111.973, 79.258, 111.983, 79.221, 111.988, 79.191, 111.984, 79.168, 111.967, 79.141, 111.940, 79.121, 111.921, 79.095, 111.895, 79.079, 111.866, 79.049, 111.839, 79.035, 111.798, 79.011, 111.762, 78.991, 111.748, 78.962, 111.761, 78.948, 111.760, 78.935, 111.759, 78.912, 111.759, 78.889, 111.761, 78.865, 111.742, 78.835, 111.709, 78.828, 111.698, 78.816, 111.687, 78.789, 111.675, 78.807, 111.643, 78.851, 111.626, 78.871, 111.612, 78.857, 111.519, 78.949, 111.638, 79.031, 111.572, 79.129, 111.483, 79.259, 111.287, 79.405, 111.094, 79.685, 110.723, 79.827, 110.536, 80.023, 110.299, 80.224, 110.161, 80.384, 109.998, 80.497, 109.972, 80.646, 109.884, 80.985, 109.665, 81.192, 109.487, 81.205, 109.476, 81.230, 109.454, 81.432, 109.292, 81.589, 109.153, 81.759, 109.022, 81.891, 108.892, 81.996, 108.873, 82.165, 108.763, 82.263, 108.663, 82.409, 108.599, 82.623, 108.552, 82.835, 108.491, 83.035, 108.395, 83.236, 108.275, 83.414, 108.136, 83.641, 107.897, 83.746, 107.863, 83.849, 107.831, 84.096, 107.690, 84.365, 107.581, 84.520, 107.491, 84.635, 107.365, 84.741, 107.183, 84.809, 107.053, 84.822, 106.997, 84.866, 106.910, 84.926, 106.781, 84.971, 106.438, 85.010, 106.392, 84.984, 106.283, 84.972, 106.033, 84.939, 105.869, 84.943, 105.859, 84.959, 105.817, 84.980, 105.787, 84.980, 105.757, 85.002, 105.747, 85.024, 105.725, 85.030, 105.706, 85.060, 105.708, 85.078, 105.694, 85.092, 105.689, 85.110, 105.688, 85.126, 105.683, 85.146, 105.674, 85.160, 105.663" alt="Zulia" onmouseover="showAltMsg('<b>Zulia</b><table class=\'results-popup\'><thead><tr style=\'color: #767676;border-bottom:1px solid #e2e2e2;text-align:left;\'><th style=\'padding-left:0;\'>Candidate</th><th style=\'padding-left: 35px;\'>Votes</th><th>Pct. <span style=\'opacity: 0;\'>%</span></th></tr></thead><tbody><tr style=\'color: #333;border-bottom:1px solid #e2e2e2;text-align:left;\'><td><div class=\'candidate\' style=\'margin:0;\'><span style=\'border-left:5px solid #0f52ba; padding-right:6px;height:1.75em;\'></span>Edmundo González</div></td><td style=\'text-align:right\'>766,915</td><td style=\'text-align:right\'><b>69%</b></td></tr><tr style=\'color: #333;border-bottom:1px solid #e2e2e2;text-align:left;\'><td><div class=\'candidate\' style=\'margin:0;\'><span style=\'border-left:5px solid #ff0000; padding-right:6px;height:1.75em;\'></span>Nicolas Maduro</div></td><td style=\'text-align:right\'>321,797</td><td style=\'text-align:right\'><b>29<span style=\'opacity: 0;\'>%</span></b></td></tr><tr style=\'color: #333;border-bottom:1px solid #e2e2e2;text-align:left;\'><td><div class=\'candidate\' style=\'margin:0;\'><span style=\'border-left:5px solid #808080; padding-right:6px;height:1.75em;\'></span>Luis Martinez</div></td><td style=\'text-align:right\'>5,924</td><td style=\'text-align:right\'><b>1<span style=\'opacity: 0;\'>%</span></b></td></tr></tbody><tfoot><tr><td colspan=\'3\' style=\'border:none;color:#767676;\'>82% of votes in</td></tr></tfoot></table>')"; onmouseout="hideAltMsg()" />
                 </map>
+                <div style="width:100%;display:flex;justify-content: center;margin:0 auto;align-items: center;height:80px;font-size:85%;">
+                    <div style="display:flex;gap:10px;align-content:center;flex-wrap:wrap;align-items:center;justify-content: center;color:#767676;">
+                        González
+                        <div style="display:flex;align-items:center;">
+                            <div style="width:20px;height:10px;background-color:#ceeafd;margin-right:1px;margin-top:1px;position:relative;">
+                                <span style="position:absolute;font-size:10px;right:0;top:12.5px;transform:translate(50%);font-weight:bold;">50</span></div>
+                            <div style="width:20px;height:10px;background-color:#92bde0;margin-right:1px;margin-top:1px;position:relative;">
+                                <span style="position:absolute;font-size:10px;right:0;top:12.5px;transform:translate(50%);font-weight:bold;">60</span></div>
+                            <div style="width:20px;height:10px;background-color:#5295cc;margin-right:1px;margin-top:1px;position:relative;">
+                                <span style="position:absolute;font-size:10px;right:0;top:12.5px;transform:translate(50%);font-weight:bold;">70</span></div>
+                            <div style="width:20px;height:10px;background-color:#1375b7;margin-right:1px;margin-top:1px;position:relative;">
+                                <span style="position:absolute;font-size:10px;right:-4.5px;top:12.5px;transform:translate(50%);font-weight:bold;">80%</span></div>
+                            <div style="width:20px;height:10px;background-color:#0f588a;margin-right:1px;margin-top:1px;position:relative;"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <script>
                 function cand_un() {
@@ -335,7 +569,21 @@
                         document.getElementsByClassName("show-all")[0].innerHTML = "+ Show all candidates";
                     }
                 }
+
+                function state_un() {
+                    if (document.getElementsByClassName("state-collapsible")[0].style.display != 'table-row'){
+                        document.getElementsByClassName("show-all")[1].innerHTML = "- Show fewer";
+                        document.querySelectorAll(".state-collapsible").forEach((row) => row.style.display = 'table-row');
+                    } else {
+                        document.querySelectorAll(".state-collapsible").forEach((row) => row.style.display = 'none');
+                        document.getElementsByClassName("show-all")[1].innerHTML = "+ Show all";
+                    }
+                }
             </script>
         </div>
+        <footer class="text-center" style="color:#767676;">
+                <p>Election results come from the returns provided by the Venezuelan opposition. <a href="https://resultadosconvzla.com">resultadosconvzla.com</a>
+                <br>You can read more about the validity of these results and how they were gathered from the <a href="https://archive.is/iXb9L" target="_blank">Washington Post</a>.</p>
+            </footer>
     </body>
 </html>
